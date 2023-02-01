@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>home</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+    <marquee><h2>WELCOME MUHSIN MAURID</h2></marquee>
+    <h1>WORD COUNT</h1>
+    
+    <form class="form-signing" action="{% url 'count' %}">
+        <textarea cols="40" rows="5" name="fulltext"></textarea><br><br>
+        <input type="submit" value="Count!" />
+    </form>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+

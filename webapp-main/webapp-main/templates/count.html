@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/> 
+</head>
+<body>
+
+    
+<h1>There are {{ count }}  words in your Text</h1>
+
+<h1>Your Text:</h1>
+
+{{ fulltext }}
+
+<h1>Word Count:</h1>
+
+{% for word, counttotal in sortedwords %}
+
+{{ word }}
+<br>
+{{ counttotal }}
+<br/>
+
+{% endfor %}
+
+
+    
+</body>
+</html>
+
+
+
